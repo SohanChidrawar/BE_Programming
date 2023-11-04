@@ -23,11 +23,11 @@ def fractionalknapsack(items,capacity):
     return total_value, knapsack
 
 if __name__ == "__main__":
-    items = [("Item1", 60, 10), ("Item2", 100, 20), ("Item3", 120, 30)]
+    # items = [("Item1", 60, 10), ("Item2", 100, 20), ("Item3", 120, 30)]
     
-    capacity = 50
-    # items = [("Item1",2, 10), ("Item2",3, 5), ("Item3",5, 15), ("Item4",7, 7), ("Item5",1, 6)]
-    # capacity = 10
+    # capacity = 50
+    items = [("Item1",10,2), ("Item2",5,3), ("Item3",15,5), ("Item4",7, 7), ("Item5", 6,1)]
+    capacity = 10
     
     total_value, selected_items = fractionalknapsack(items,capacity)
 
@@ -37,8 +37,7 @@ if __name__ == "__main__":
         item_name, item_weight = item
         print("",item_name,"- Weight:",item_weight)
 
-
-
+     
 
 
 # ----------------------------------------------------------------------------------------------------------- #
@@ -46,9 +45,10 @@ if __name__ == "__main__":
  OUTPUT:
 
 MESCOE\Desktop\BE\7sem\DAA> python 3.py
-Maximum value can be obtained:  240.0
-Selected item in the knapsack:
- Item1 - Weight: 10
- Item2 - Weight: 20
- Item3 - Weight: 20
+Maximum value can be obtained:  34.333333333333336
+Selected item in the knapsack: 
+ Item5 - Weight: 1
+ Item1 - Weight: 2
+ Item3 - Weight: 5
+ Item2 - Weight: 2
 '''
