@@ -11,7 +11,7 @@ def fractionalknapsack(items,capacity):
         if capacity >= item_weight:
             knapsack.append((item_name,item_weight))
             total_value += item_value
-            capacity -+ item_weight
+            capacity -= item_weight
         
         else:
              # If only a fraction of the item can be added, add that fraction
@@ -46,9 +46,9 @@ if __name__ == "__main__":
  OUTPUT:
 
 MESCOE\Desktop\BE\7sem\DAA> python 3.py
-Maximum value can be obtained:  280
+Maximum value can be obtained:  240.0
 Selected item in the knapsack:
  Item1 - Weight: 10
  Item2 - Weight: 20
- Item3 - Weight: 30
+ Item3 - Weight: 20
 '''
