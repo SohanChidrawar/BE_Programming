@@ -52,3 +52,17 @@ Selected item in the knapsack:
  Item3 - Weight: 5
  Item2 - Weight: 2
 '''
+
+# The code items.sort(key=lambda x: x[1] / x[2], reverse=True) is sorting the items list based on a custom sorting key using a lambda function.
+# Here's the breakdown of what it means:
+
+# items.sort: This is a method used to sort the items list in-place. It will reorder the items within the list according to the sorting criteria
+# specified.
+
+# key=lambda x: x[1] / x[2]: This is a lambda function that calculates the value-to-weight ratio for each item x. In the lambda function:
+
+# x[1] refers to the second element of each item, which is typically the item's value.
+# x[2] refers to the third element of each item, which is typically the item's weight.
+# x[1] / x[2] calculates the value-to-weight ratio for the item x. It's used as the key for sorting.
+# reverse=True: This parameter specifies that the sorting should be in descending order. In other words, it will sort the items with the highest
+# value-to-weight ratio first, effectively sorting items from the most valuable to the least valuable per unit weight.
