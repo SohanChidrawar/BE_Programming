@@ -1,8 +1,7 @@
 def safe(arr,x,y,n):
     #checking if queen in same column
     for row in range(x):
-        if arr[row][y] == 1:
-            
+        if arr[row][y] == 1:  
             return False
 
     #checking queen in left diagonal 
