@@ -43,12 +43,16 @@ def printNodes(node, val=''):
 		print(f"{node.symbol} -> {newVal}") 
 
 
-# characters for huffman tree 
-chars = ['a', 'b', 'c', 'd', 'e', 'f'] 
-
-# frequency of characters 
-freq = [5, 9, 12, 13, 16, 45] 
-
+# Dynamic input for characters and frequencies
+num_chars = int(input("Enter the number of characters: "))
+chars = []
+freq = []
+for i in range(num_chars):
+    char = input(f"Enter character {i + 1}: ")
+    frequency = int(input(f"Enter frequency for {char}: "))
+    chars.append(char)
+    freq.append(frequency)
+	
 # list containing unused nodes 
 nodes = [] 
 
@@ -82,7 +86,21 @@ printNodes(nodes[0])
 '''
 Output:
 
-python 2.py
+python huffmann.py
+Enter the number of characters: 6
+Enter character 1: a
+Enter frequency for a: 5
+Enter character 2: b
+Enter frequency for b: 9
+Enter character 3: c
+Enter frequency for c: 12
+Enter character 4: d
+Enter frequency for d: 13
+Enter character 5: e
+Enter frequency for e: 16
+Enter character 6: f
+Enter frequency for f: 45
+Huffman Codes:
 f -> 0
 c -> 100
 d -> 101
