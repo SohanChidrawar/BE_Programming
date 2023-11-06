@@ -70,8 +70,12 @@ while len(nodes) > 1:
 
 	# combine the 2 smallest nodes to create 
 	# new node as their parent 
-	newNode = node(left.freq+right.freq, left.symbol+right.symbol, left, right) 
+	newNode = node(left.freq+right.freq, left.symbol+right.symbol, left, right)
 
+	heapq.heappush(nodes, newNode) 
+
+# Huffman Tree is ready! 
+printNodes(nodes[0]) 
 
 
 # ----------------------------------------------------------------------------------------------------------------
@@ -87,8 +91,3 @@ b -> 1101
 e -> 111
 
 '''
-
-	heapq.heappush(nodes, newNode) 
-
-# Huffman Tree is ready! 
-printNodes(nodes[0]) 
