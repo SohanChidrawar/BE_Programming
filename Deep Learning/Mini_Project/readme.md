@@ -1,3 +1,5 @@
+HUMAN FACE RECOGNITION
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Face detection is a fundamental task in computer vision that plays a crucial role in various applications such as surveillance, biometrics, and human-computer interaction. Traditional face detection methods often rely on handcrafted features and machine learning algorithms, which may not generalize well to complex real-world scenarios. In recent years, deep learning techniques have revolutionized the field of computer vision, including face detection.
 
 This academic project aims to implement a face detection system using deep learning algorithms. The project utilizes convolutional neural networks (CNNs), a powerful class of deep learning models, to accurately and efficiently detect faces in images or video streams. The main objective is to develop a robust and real-time face detection solution that can handle variations in pose, illumination, occlusion, and facial expressions.
