@@ -1,0 +1,3 @@
+- write code in a file and save it with .cu extension
+- compile it: nvcc name_of_file.cu -o name_of_file_to_save
+- ./name_of_file_to_save
