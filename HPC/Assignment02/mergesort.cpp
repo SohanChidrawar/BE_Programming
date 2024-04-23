@@ -113,4 +113,19 @@ int main() {
 
     return 0;
 }
+/*
+// ---------------------------------------------------------------------------------------------------
 
+Enter the number of elements: 9
+Enter 9 elements:
+9 8 7 4 5 6 3 1 2  
+
+Sorted array using sequential merge sort:   
+1 2 3 4 5 6 7 8 9
+Sequential Merge Sort Time: 0.000000 seconds
+
+Sorted array using parallel merge sort:     
+1 2 3 4 5 6 7 8 9
+Parallel Merge Sort Time: 0.002000 seconds 
+
+*/
